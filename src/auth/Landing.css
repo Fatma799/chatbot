@@ -1,0 +1,44 @@
+:root{
+    --primary-color:#0047AB;
+}
+.landing_container {
+    background: radial-gradient(84.69% 157.97% at 73.13% 94.62%, #0047AB 0%, #F0F8FF 41.76%) !important;
+    height:100vh;
+    padding-top: 50px;
+}
+.navbar{
+    background-color:#D4EBFF !important;
+    box-shadow: 3px 0px 12px var(--primary-color) !important;
+}
+.navbar .Logo-image{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary-color) !important;
+}
+.navbar .btn-section .btn-nav{
+    background-color: var(--background) !important;
+    box-shadow: 0 0 8px #6691CD;
+    border-radius: 12px;
+    padding: 7px;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+ .btn-auth{
+    padding:10px 30px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+}
+.register-nav{
+    background-color: var(--primary-color) !important;
+}
+.landing-title{
+    color: var(--primary-color);
+}
+.footer-auth a{
+    padding: 8px 40px !important;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}

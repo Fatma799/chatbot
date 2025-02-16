@@ -1,0 +1,143 @@
+.sidebar {
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px; 
+    background-color: #D4EBFF; 
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    padding: 20px;
+    gap: 8px;
+}
+
+
+.sidenavnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 32px;
+}
+
+.close-button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar-icons {
+    display: flex;
+}
+
+.nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.logoN {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #0047AB;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.logoN img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-name {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.history {
+    flex-grow: 1; 
+}
+
+.history h3 {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #003F56;
+}
+
+.history-group {
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.history-group h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #003F56;
+}
+
+.history ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    gap: 8px;
+}
+
+.history li {
+    width: 100%;
+    color: #055977;
+    margin-bottom: 5px;
+    font-size: 12px;
+    position: relative;
+}
+.doted-icon{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
